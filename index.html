@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egypt Tourism Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="chat-panel" aria-label="Egypt tourism chatbot">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Egypt Tourism</p>
+            <h1>Assistant</h1>
+          </div>
+          <span class="status" id="status">Ready</span>
+        </header>
+
+        <div class="messages" id="messages">
+          <article class="message assistant">
+            <div class="bubble">
+              Ask about Egyptian landmarks, travel tips, or request an image like "generate pyramid image".
+            </div>
+          </article>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <input
+            id="promptInput"
+            type="text"
+            autocomplete="off"
+            placeholder="Ask about Giza, Siwa, Karnak, Alexandria..."
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <aside class="side-panel">
+        <h2>Try</h2>
+        <button class="suggestion" type="button">Tell me about the Pyramids of Giza.</button>
+        <button class="suggestion" type="button">What should I visit in Aswan?</button>
+        <button class="suggestion" type="button">Generate Bent Pyramid image</button>
+        <button class="suggestion" type="button">Generate Siwa image</button>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
